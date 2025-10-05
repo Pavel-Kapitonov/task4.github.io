@@ -1,0 +1,298 @@
+.montserrat-alternates-regular {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-alternates-bold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    overflow-x: hidden; /* убрал горизонтальный скролл */
+}
+
+p {
+      margin: 0;
+      padding: 0;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ol li p {
+  display: inline;
+}
+
+.header {
+    box-sizing: border-box; /* задаем общие размеры блока включая padding */
+    width: 100%; 
+    background-color: #EDEFF2;
+    padding: 10px;
+    height: 210px;
+    border-radius: 20px;
+    gap:20px;
+
+    flex-direction: column; 
+    display: flex; /* превращаю хедер в контейнер гибкий, чтобы потом им удобнее управлять*/
+    align-items: flex-start; /* выравнивает элементы по левому краю */
+    justify-content: space-between; /* первый элемент к началу второй к краю */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    width: 100%;
+
+}
+
+.logo {
+    border-radius: 20px;
+    margin: 3px;
+    width: 100px;
+    height: 100px;
+    margin-right: auto; 
+}
+
+.logo:hover {
+    opacity: 70%;
+}
+
+
+.main-nav ul {
+    list-style: none;
+
+    
+    margin-left: 0; 
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+    display: flex; 
+    flex-direction:column;
+
+    width: 100%;
+
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav a:hover {
+    opacity: 50%;
+}
+
+.namestr {
+    padding:10px;
+    margin-left: auto;
+}
+
+.namestr h1 {
+    font-size: 19px;
+}
+
+.content-header {
+    max-width:800px;
+    margin: 0 auto;
+    margin-top:40px;
+    padding:10px;
+
+    flex-direction: column;
+    display: flex;
+}
+
+.mylinks ol li {
+    margin-top: 10px; 
+}
+
+
+table {
+  width: 100%; 
+  border-collapse: separate; /* границы яйчеек отдельно */
+  border-spacing: 0;
+  border: 2px solid #ccc; 
+  border-radius: 12px;
+  margin-top: 20px; 
+  order: 0;
+}
+
+.mylinks {
+  order: 1;
+}
+
+.myform {
+  order: 2;
+}
+
+.mytable2 {
+    overflow-x: auto; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table th:first-child {
+  border-top-left-radius: 10px;
+}
+table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+
+th, td {
+  border: 1px solid #ccc; 
+  padding: 12px; 
+  text-align: left;  /* прижимаю текст таблицы влево */
+}
+
+th {
+  background-color: #f2f2f2; 
+  font-weight: bold; 
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; 
+}
+
+tr:hover {
+  background-color: #ddd; 
+}
+
+.spisok {
+    margin-left: 15px;
+}
+
+
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+    background-color: #EDEFF2;
+    padding: 10px;
+    text-align: left;
+    border-radius: 20px;
+    margin-top: 79px; /* Отступ сверху */
+    border-radius: 20px;
+}
+
+.footer-container {
+    margin-top: 35px;
+}
+
+.pfooter {
+    font-weight: bold;
+}
+
+.other {
+    margin-top: 10px;
+}
+
+.myform label {
+    display: inline-block; /* полный контроль над размером сохраняя поведение в потоке текста*/
+    margin-top: 7px;
+}
+
+.knopka {
+    margin-top:5px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background-color: #ffffff;
+}
+
+.knopka:hover {
+    background-color: #ccc;
+}
+
+.content-header h2 {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 100%;
+    height: 120px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+  .main-nav ul {
+    margin-left: 50px;
+    margin: 0;
+    padding: 0;
+    margin-right:0;
+
+
+    flex-direction: row; /* элементы выстраиваются в ряд */
+    gap: 20px;
+    margin-left: 50px;
+  }
+
+  .content-wrapper {
+    display:flex;
+    flex-wrap: wrap; /* элементы внутри контейнера будут переноситься на новую строку если не хватает места*/
+    justify-content: space-between; /*даю пространство между элементами, а края контейнера без дополнительного отступа */
+  }
+
+
+  table {
+  width: 100%; 
+  border-collapse: separate; 
+  border-spacing: 0;
+  border: 2px solid #ccc; 
+  border-radius: 12px;
+  margin-top: 20px; 
+  order: 1;
+}
+
+.mylinks {
+  order: 0;
+}
+
+.myform {
+  order: 2;
+}
+
+.footer {
+    box-sizing: border-box; /* предотврощая вылезания элементов за рамки, ширина и высота вычитаются из блока */
+    width: 100%;
+    height: 120px;
+    background-color: #EDEFF2;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 79px; /* Отступ сверху */
+    border-radius: 20px;
+}
+
+.namestr {
+    padding:10px;
+    margin-left: 0;
+}
+
+}
