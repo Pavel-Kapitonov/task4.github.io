@@ -40,8 +40,8 @@
 
 
 
-    <main class="container my-4">
-      <div class="content-header">
+    <main class="container my-4 d-flex flex-column mx-auto">
+      <div class="content-heade order-1">
       <h1 class="fw-bold mt-5 fs-2">Задание 4.</h1>
       <p class="mb-0">Переделать сайт из прошлого задания 3 с помощью фреймворка Bootstrap</p> 
       <p class="mb-0">Работу выполнил: Капитонов Павел ПМ 21/2</p> 
@@ -49,9 +49,8 @@
 
       <!-- Гиперсыллки -->
       
-      
-        
-      <div class="mylinks">
+      <div class="order-3 order-md-2 p-2 mylinks">
+
         <h2 class="fw-bold mt-5 fs-2" id="hyperlinks">Список гиперсcылок</h2>
         <ol class="list-group list-group-flush list-group-numbered mb-4">
         <li class="list-group-item"><a href="http://kubsu.ru">Кубгу HTTP</a></li>
@@ -93,8 +92,7 @@
 
       <!-- Таблица -->
 
-      
-      <!-- Таблица -->
+      <div class="order-2 order-md-3 p-2 bd-highlight tablica">
       <h2 id="table" class="mt-4 mb-3 fw-bold fs-2">Таблица</h2>
       <div class="table-responsive">
         <table class="table table-striped table-bordered table-hover">
@@ -152,13 +150,15 @@
         </tbody>
         </table>
       </div>
+
+      </div> <!-- Конец Таблица -->
       
     
 
       <!-- Форма -->
 
-      
-      <h2 id="form" class="mt-4 mb-4 fw-bold fs-2">Форма</h2>
+      <div class="p-2 order-4 bd-highlight forma">
+              <h2 id="form" class="mt-4 mb-4 fw-bold fs-2">Форма</h2>
       <form action="/"
       method="POST">
 
@@ -229,6 +229,13 @@
           </form>
   
     </div>
+      </div> <!-- Конец формы -->
+
+      </div>
+        
+      
+
+
     </main>
 
     <footer class="custom-footer-bg text-dark py-4 mt-5 ">
